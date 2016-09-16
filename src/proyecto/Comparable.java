@@ -10,7 +10,8 @@ abstract class Figuras implements Comparable<Figuras>,Serializable
 
     public abstract double area();
 
-
+    //Condiciones ordenadoras para que pueda utilizarla el Arrays.Sort
+    
     public int compareTo(Figuras f)
     {
         if(this.area()<f.area())
