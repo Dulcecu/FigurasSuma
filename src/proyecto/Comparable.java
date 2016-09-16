@@ -5,7 +5,7 @@ import java.lang.Comparable;
  * Created by Dulcecu on 14/09/2016.
  */
 
-abstract class Figuras implements Comparable<Figuras>,Serializable
+abstract class Figuras implements Comparable<Figuras>
 {
 
     public abstract double area();
