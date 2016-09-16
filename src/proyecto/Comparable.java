@@ -1,9 +1,8 @@
 package proyecto;
-import java.io.*;
 import java.lang.Comparable;
 
 /**
- * Created by Turpitude on 14/09/2016.
+ * Created by Dulcecu on 14/09/2016.
  */
 
 abstract class Figuras implements Comparable<Figuras>,Serializable
