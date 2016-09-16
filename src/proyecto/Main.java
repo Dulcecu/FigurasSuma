@@ -1,11 +1,10 @@
 package proyecto;
-import java.io.*;
 import java.util.Arrays;
 
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Figuras[] ll = new Figuras[4];
         ll[0]=new rectangulo(2,7);
         ll[1]=new cuadrado(10);
@@ -28,28 +27,6 @@ public class Main {
 
         }
 
-
-
-        File file = new File("c:/Users/Turpitude/Desktop/fichero.bin");
-        FileOutputStream fos = new FileOutputStream(file);
-        FileInputStream fis = new FileInputStream("c:/Users/Turpitude/Desktop/fichero.bin");
-        ObjectOutputStream out = new ObjectOutputStream(fos);
-        ObjectInputStream in = new ObjectInputStream(fis);
-        //Convertir objeto a byte y meter en fichero
-        out.writeObject(ll);
-        //Convertir bytes y recuperar objeto
-        Figuras[] llrecuperar= new Figuras[4];
-        try {
-            llrecuperar=(Figuras[])in.readObject();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-         //Una vez recuperado el archivo, mostramos de nuevo las areas ordenadas
-        for(Figuras f:llrecuperar)
-        {
-            System.out.print(f.area());
-
-        }
 
 
     }
