@@ -17,8 +17,10 @@ public class Main {
 
         }
         System.out.print(suma+"/////");
+         //Ordenamos segun la condicion de ordenacion del metodo compareTo en la clase abstracta Figuras
         Arrays.sort(ll);
-
+        
+        //En este for printamos las areas de cada figura ordenadas de menor a mayor
         for(Figuras f:ll)
         {
 
@@ -42,10 +44,9 @@ public class Main {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
+         //Una vez recuperado el archivo, mostramos de nuevo las areas ordenadas
         for(Figuras f:llrecuperar)
         {
-
             System.out.print(f.area());
 
         }
