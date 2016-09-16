@@ -16,13 +16,13 @@ public class Main {
             suma=suma+f.area();
 
         }
-        System.out.print(suma+"//////");
+        System.out.print(suma+"/////");
         Arrays.sort(ll);
 
         for(Figuras f:ll)
         {
 
-            System.out.print(f.area()+",");
+            System.out.print(f.area()+"/////");
 
         }
 
